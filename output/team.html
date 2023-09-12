@@ -1,47 +1,209 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Team</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c502137733.js"></script>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      /* Custom Styles */
+      body {
+        background-image: url("../src/team1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
 
-<body>
+      .team-heading {
+        background-color: #34495e;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .team-heading h1 {
+        font-size: 2.5rem;
+      }
+
+      .team-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        max-width: 1200px;
+      }
+
+      .employee-card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        margin: 20px;
+        width: 300px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .employee-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card-header {
+        background-color: #34495e;
+        color: #fff;
+        padding: 15px;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .card-title {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+
+      .card-subtitle {
+        font-size: 1.2rem;
+      }
+
+      .card-body ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .card-body ul li {
+        margin: 10px 0;
+      }
+
+      .card-body ul li a {
+        color: #3498db;
+        text-decoration: none;
+      }
+
+      .card-body ul li a:hover {
+        text-decoration: underline;
+      }
+
+      /* GitHub logo styles */
+      .github-logo {
+        margin-top: 40px;
+      }
+
+      .github-logo a {
+        text-decoration: none;
+      }
+
+      .github-logo img {
+        width: 150px;
+        height: 150px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .github-logo img:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
-                <h1 class="text-center">My Team</h1>
+      <div class="row">
+        <div class="col-12 team-heading">
+          <h1>Meet Our Team</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container team-container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="card employee-card">
+            <div class="card-header">
+              <h2 class="card-title">Lionel Messi</h2>
+              <h3 class="card-subtitle">
+                <i class="fas fa-mug-hot mr-2"></i>Manager
+              </h3>
             </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="team-area col-12 d-inline-flex flex-wrap justify-content-center">
-                
-        <div class="card employee-card col-sm-12 col-md-4">
-        <div class="card-header">
-            <h2 class="card-title">Lionel Messi</h2>
-            <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>Manager</h3>
-        </div>
-        <div class="card-body">
-            <ul class="list-group">
-                <li class="list-group-item">ID: 30</li>
-                <li class="list-group-item">Email: <a href="mailto:messi@example.com">messi@example.com</a></li>
-                <li class="list-group-item">Office number: 0888888888</li>
-            </ul>
-        </div>
-    </div>
-        
+            <div class="card-body">
+              <ul>
+                <li>ID: 30</li>
+                <li>
+                  Email:
+                  <a href="mailto:messi@example.com">messi@example.com</a>
+                </li>
+                <li>Office: 0888888888</li>
+              </ul>
             </div>
+          </div>
         </div>
+
+        <div class="col-sm-12 col-md-4">
+          <div class="card employee-card">
+            <div class="card-header">
+              <h2 class="card-title">Cristiano Ronaldo</h2>
+              <h3 class="card-subtitle">
+                <i class="fas fa-glasses mr-2"></i>Engineer
+              </h3>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>ID: 7</li>
+                <li>
+                  Email:
+                  <a href="mailto:ronaldo@example.com">ronaldo@example.com</a>
+                </li>
+                <li>
+                  GitHub:
+                  <a
+                    href="https://github.com/ronaldo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >ronaldo</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4">
+          <div class="card employee-card">
+            <div class="card-header">
+              <h2 class="card-title">Kylian Mbappe</h2>
+              <h3 class="card-subtitle">
+                <i class="fas fa-user-graduate mr-2"></i>Intern
+              </h3>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>ID: 10</li>
+                <li>
+                  Email:
+                  <a href="mailto:mbappe@example.com">mbappe@example.com</a>
+                </li>
+                <li>School: PSG</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <div class="container text-center github-logo">
+      <a
+        href="https://github.com/sanifmujawar/Team-Profile-Generator"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="../src/Daco_4644573.png" alt="GitHub Logo" />
+      </a>
+    </div>
+  </body>
 </html>
-    
