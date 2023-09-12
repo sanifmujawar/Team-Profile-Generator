@@ -1,0 +1,14 @@
+{
+    "name": "team-profile-generator",
+    "version": "1.0.0",
+    "description": "Command-line application  generates an HTML webpage that displays employees basic info",
+    "main": "index.js",
+    "directories": {
+      "lib": "lib"
+    },
+    "scripts": {
+      "test": "jest --verbose"
+    },
+    "author": "Sanif Mujawar",
+    "license": "ISC"
+  }
