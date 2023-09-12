@@ -14,37 +14,33 @@ Once you are ready to run the program, enter `npm start` in the terminal, and an
 
 ## 🔍 Preview
 
-saasa
+![Video Preview](./src/demo.gif)
 
 ## 📷 Screenshots
 
-1. Initialize the application with `npm start`:
+1. Initialize the application with `npm test`:
 
-![initializing the program](images/usage-1.png)
+![initializing the program](./src/npm%20test.png)
 
 2. Initializing the application immediately prompts with information for the Manager, then prompts for what to do next:
 
-![prompts for manager](images/usage-2.png)
+![prompts for manager](./src/usage-2.png)
 
 3. Selecting 'Engineer' gives a series of prompts specific to the engineer:
 
-![selecting engineer](images/usage-3.png)
+![selecting engineer](./src/usage-3.png)
 
 4. Selecting 'Intern' is the same, you receive specific prompts for an intern:
 
-![selecting intern](images/usage-4.png)
+![selecting intern](./src/usage-4.png)
 
 5. Receiving confirmation of no errors and webpage being made:
 
-![response confirmation](images/usage-5.png)
+![response confirmation](./src/usage-5.png)
 
-6. Generated files in the `/dist` folder:
+6. Preview of generated file:
 
-![generated files](images/usage-6.png)
-
-7. Preview of generated file:
-
-![file preview](images/usage-7.png)
+![file preview](./src/usage-6.png)
 
 ## User Story
 
@@ -75,3 +71,23 @@ THEN I am prompted to enter the intern’s name, ID, email, and school, and I am
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
+
+## Technical Details 🛠️
+
+The README Generator is built using Node.js and the Inquirer.js library for user prompts. It dynamically generates README files based on user input and predefined templates.
+
+## Repository Quality 📚
+
+The GitHub repository for this project adheres to best practices in terms of file structure, naming conventions, class/id naming, indentation, and commit messages.
+
+## License 📜
+
+This project is open source and available under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact Information 📧
+
+For questions, feedback, or contributions, please contact [Sanif Mujawar](sanifmujawar@gmail.com).
+
+---
+
+Feel free to enhance this README further with additional sections or details specific to your README Generator project. This template provides a solid foundation for informing users about the tool's features, how to use it, and where to find more information.
